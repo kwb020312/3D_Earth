@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import { OrbitControls } from "@react-three/drei";
+import * as THREE from "three";
 
 import EarthDayMap from "../../assets/textures/8k_earth_daymap.jpg";
 import EarthNormalMap from "../../assets/textures/8k_earth_normal_map.jpg";
@@ -17,6 +18,16 @@ const Earth = (props) => {
   return (
     <Fragment>
       <ambientLight intensity={1} />
+      <mesh>
+        <sphereGeometry args={[1.005, 32, 32]} />
+        <meshPhongMaterial
+          map={cloudsMap}
+          opacity={0.4}
+          depthWrite={true}
+          transparent={true}
+          side={THREE.DoubleSide}
+        />
+      </mesh>
       <mesh>
         <sphereGeometry args={[1, 32, 32]} />
         <meshPhongMaterial specularMap={specularMap} />
