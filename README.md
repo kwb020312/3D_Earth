@@ -1,8 +1,9 @@
-# React + Vite
+# 3D Earth
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🌍지구, 3D하면 지구 먼저 만들어야지
 
-Currently, two official plugins are available:
+지구온난화 예방할겸 만들어봄
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[지구 보러가기](https://3-d-earth-swart.vercel.app/)
+
+![image](https://github.com/kwb020312/3D_Earth/assets/46777310/4a16c466-0ae2-4ed1-9051-0ec9025f68b0)
