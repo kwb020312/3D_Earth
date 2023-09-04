@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Spoqa";
+  src: url("./assets/font/SpoqaHanSansNeo-Medium.ttf");
+}
+* {
+  font-family: "Spoqa";
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
