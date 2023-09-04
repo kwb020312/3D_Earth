@@ -17,7 +17,8 @@ const Earth = (props) => {
 
   return (
     <Fragment>
-      <ambientLight intensity={1} />
+      {/* <ambientLight intensity={1} /> */}
+      <pointLight color={"#f6f3ea"} position={[2, 0, 2]} intensity={30} />
       <Stars
         radius={300}
         depth={60}
@@ -39,7 +40,12 @@ const Earth = (props) => {
       <mesh>
         <sphereGeometry args={[1, 32, 32]} />
         <meshPhongMaterial specularMap={specularMap} />
-        <meshStandardMaterial map={colorMap} normalMap={normalMap} />
+        <meshStandardMaterial
+          map={colorMap}
+          normalMap={normalMap}
+          metalness={0.4}
+          roughness={0.7}
+        />
         <OrbitControls
           enableZoom={true}
           enablePan={true}
