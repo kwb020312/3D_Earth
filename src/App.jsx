@@ -1,5 +1,4 @@
 import { styled } from "styled-components";
-import "./App.css";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import Earth from "./components/earth";
